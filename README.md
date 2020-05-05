@@ -1,2 +1,6 @@
 # AIASS-for-MAX4LIVE
-A Max4Live Synthesizer for the SIDBlaster-USB
+![](./Documentation/AIASS.png)
+#### AIASS - SIDBlaster Control Plugin for Ableton Live
+Programming and UI design by Andreas Schumm
+
+Copyright © 2020 [www.crazy-midi.de](http://www.crazy-midi.de)
