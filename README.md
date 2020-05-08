@@ -11,8 +11,12 @@ see: [https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition](https://githu
 
 (Unfortunately only for Windows at the moment.)
 
+Thanks to:
+
+*Stein Pedersen and Wilfred Bos for there support.
+
 ##### Copyright © 2020 [www.crazy-midi.de](http://www.crazy-midi.de)
 
 Andreas Schumm (gh0stless)
-contact: info@crazy-mide.de
+contact: info@crazy-midi.de
 
