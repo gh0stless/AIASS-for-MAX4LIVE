@@ -13,3 +13,6 @@ see: [https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition](https://githu
 
 ##### Copyright © 2020 [www.crazy-midi.de](http://www.crazy-midi.de)
 
+Andreas Schumm (gh0stless)
+contact: info@crazy-mide.de
+
