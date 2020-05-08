@@ -7,7 +7,9 @@ The AIASS, together with Sidblaster-USB hardware, allows to produce music with a
 
 see: [https://github.com/gh0stless/sid-object](https://github.com/gh0stless/sid-object/) for the sid object used.
 
-see: [https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition](https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition) for the hardware.
+see: [https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition](https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition) for SIDBlaster-USB hardware.
+
+see: [https://github.com/Galfodo/SIDBlasterUSB_HardSID-emulation-driver](https://github.com/Galfodo/SIDBlasterUSB_HardSID-emulation-driver) for hardsid.dll.
 
 (Unfortunately only for Windows at the moment.)
 
