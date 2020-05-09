@@ -11,6 +11,8 @@ see: [https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition](https://githu
 
 see: [https://github.com/Galfodo/SIDBlasterUSB_HardSID-emulation-driver](https://github.com/Galfodo/SIDBlasterUSB_HardSID-emulation-driver) for hardsid.dll.
 
+see: [https://github.com/gh0stless/AIASS-Mono-VST](https://github.com/gh0stless/AIASS-Mono-VST) for the VST variant of the AIASS.
+
 (Unfortunately only for Windows at the moment.)
 
 Thanks to:
