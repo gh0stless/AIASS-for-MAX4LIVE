@@ -5,7 +5,7 @@
 #### Documentation and Sounddesign by Magnus Hansson
 The AIASS, together with Sidblaster-USB hardware, allows to produce music with an original SID chip MOS 6581 or MOS 8580 from the Commodore 64, in a modern DAW.
 
-see the [manual](https://github.com/gh0stless/AIASS-for-MAX4LIVE/tree/master/Documentation/AIASS%20Manual%20English%20v1.1.pdf) or the [wiki](https://github.com/gh0stless/AIASS-for-MAX4LIVE/wiki) for instructions
+see the [manual](https://github.com/gh0stless/AIASS-for-MAX4LIVE/tree/master/Documentation) or the [wiki](https://github.com/gh0stless/AIASS-for-MAX4LIVE/wiki) for instructions
 
 see: [https://github.com/gh0stless/sid-object](https://github.com/gh0stless/sid-object/) for the sid object used.
 
