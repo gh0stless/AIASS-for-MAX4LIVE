@@ -7,13 +7,13 @@ The AIASS, together with Sidblaster-USB hardware, allows to produce music with a
 
 see the [manual](https://github.com/gh0stless/AIASS-for-MAX4LIVE/tree/master/Documentation) or the [wiki](https://github.com/gh0stless/AIASS-for-MAX4LIVE/wiki) for instructions
 
-see: [https://github.com/gh0stless/sid-object](https://github.com/gh0stless/sid-object/) for the sid object used.
+see: [sid-object](https://github.com/gh0stless/sid-object/) for the Max/MSP extention used.
 
-see: [https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition](https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition) for SIDBlaster-USB hardware.
+see: [SIDBlaster-USB-Tic-Tac-Edition](https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition) for SIDBlaster-USB hardware.
 
-see: [https://github.com/Galfodo/SIDBlasterUSB_HardSID-emulation-driver](https://github.com/Galfodo/SIDBlasterUSB_HardSID-emulation-driver) for hardsid.dll.
+see: [SIDBlasterUSB_HardSID-emulation-driver](https://github.com/Galfodo/SIDBlasterUSB_HardSID-emulation-driver) for hardsid.dll.
 
-see: [https://github.com/gh0stless/AIASS-Mono-VST](https://github.com/gh0stless/AIASS-Mono-VST) for the VST variant of the AIASS.
+see: [AIASS-Mono-VST](https://github.com/gh0stless/AIASS-Mono-VST) for the VST variant of the AIASS.
 
 (Unfortunately only for Windows at the moment.)
 

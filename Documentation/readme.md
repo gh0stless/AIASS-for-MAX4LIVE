@@ -4,7 +4,12 @@ Here is the manual in pdf format.
 
 ## Versions history
 
-#### v.0.5.1  
+
+#### v.0.6.0
+
+- so many changes
+
+#### v.0.5.1
 
 - manual and wiki created
 
