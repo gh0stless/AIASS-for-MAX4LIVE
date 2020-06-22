@@ -7,7 +7,7 @@ Here is the manual in pdf format.
 
 #### v.0.6.0
 
-- so many changes
+- so many changes and innovations
 
 #### v.0.5.1
 
