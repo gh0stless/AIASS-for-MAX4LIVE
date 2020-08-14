@@ -7,7 +7,7 @@ The AIASS, together with Sidblaster-USB hardware, allows to produce music with a
 
 see the [manual](https://github.com/gh0stless/AIASS-for-MAX4LIVE/tree/master/Documentation) or the [wiki](https://github.com/gh0stless/AIASS-for-MAX4LIVE/wiki) for instructions
 
-see: [sid-object](https://github.com/gh0stless/sid-object/) for the Max/MSP extention used.
+see: [sid-object](https://github.com/gh0stless/sid-object/) for the Max/MSP extention thats used.
 
 see: [SIDBlaster-USB-Tic-Tac-Edition](https://github.com/gh0stless/SIDBlaster-USB-Tic-Tac-Edition) for SIDBlaster-USB hardware.
 
