@@ -5,12 +5,16 @@
     "max_version_min" : "7.1", "max_version_max" : "none",
     "name" : "SID-Object",
     "os" : {
+		    "macintosh" : {
+            "platform" : [ "x64" ],
+            "min_version" : "none"
+        },
         "windows" : {
-            "platform" : [ "ia32", "x64" ],
+            "platform" : [ "x64" ],
             "min_version" : "7"
         }
     },
     "tags" : [ ],
-    "version" : "1.0.1",
+    "version" : "1.1",
     "website" : "http://www.crazy-midi.de"
 }

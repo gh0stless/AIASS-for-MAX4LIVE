@@ -15,13 +15,13 @@ see: [SIDBlasterUSB_HardSID-emulation-driver](https://github.com/Galfodo/SIDBlas
 
 see: [AIASS-Mono-VST](https://github.com/gh0stless/AIASS-Mono-VST) for the VST variant of the AIASS.
 
-(Unfortunately only for Windows at the moment.)
-
 Thanks to:
 
 *Stein Pedersen and Wilfred Bos for there support.
 
-##### Copyright © 2020 [www.crazy-midi.de](http://www.crazy-midi.de)
+*Ken Händel for the linux/mac port of the hardsid library.
+
+##### Copyright © 2022 [www.crazy-midi.de](http://www.crazy-midi.de)
 
 Andreas Schumm (gh0stless)
 contact: info@crazy-midi.de
