@@ -1,8 +1,8 @@
 /*
 	@file
 	SID.c - a Max/MSP external for SIDBlaster-USB
-	� 2016-2022 by Andreas Schumm (gh0stless) for www.crazy-midi.de
-	v.1.1 2022-10-03
+	� 2016-2024 by Andreas Schumm (gh0stless) for www.crazy-midi.de
+	v.1.5 2024-11-09
 */
 
 #include "ext.h"
@@ -14,8 +14,7 @@
 #endif
 #include "SID.h"
 
-
-const char* version = "v.1.1";
+const char* version = "v.1.5";
 
 void ext_main(void *r)
 {
@@ -57,7 +56,7 @@ void ext_main(void *r)
     #endif
     
     #if defined(__APPLE__)
-        void* lib_handle = dlopen("libhardsid.dylib", RTLD_LOCAL|RTLD_LAZY);
+        void* lib_handle = dlopen("/usr/local/lib/libhardsid.dylib", RTLD_LOCAL|RTLD_LAZY);
         if (lib_handle) dll_load = true;
         else dll_load= false;
     #endif
@@ -215,32 +214,17 @@ void *sid_new(long n)		// n = int argument typed into object box (A_DEFLONG) -- 
 	mytypestring[0] = 0;
 	mytype = HardSID_GetSIDType(x->My_Device);
 	switch (mytype) {
-#if defined(_WIN32) || defined(_WIN64)
 	case 0:
-		strcpy_s(mytypestring,8, "unknown");
+		my_stpcpy(mytypestring, "unknown");
 		break;
 	case 1:
-		strcpy_s(mytypestring,5, "6581");
+		my_stpcpy(mytypestring, "6581");
 		break;
 	case 2:
-		strcpy_s(mytypestring,5, "8580");
+		my_stpcpy(mytypestring, "8580");
 		break;
 	default:
-		strcpy_s(mytypestring,6, "error");
-#endif
-#if defined(__APPLE__)
-	case 0:
-		stpcpy(mytypestring, "unknown");
-		break;
-	case 1:
-		stpcpy(mytypestring, "6581");
-		break;
-	case 2:
-		stpcpy(mytypestring, "8580");
-		break;
-	default:
-		stpcpy(mytypestring, "error");
-#endif		
+		my_stpcpy(mytypestring, "error");
 
 	}
 	post("SID: info: using device No.: %ld with serial: %s, a %s SID Chip are detected", x->My_Device, serial, mytypestring);
@@ -280,6 +264,7 @@ void *sid_threadproc(t_sid *x)
 {
 	write_event lwe;
 	while (1) {
+		Uint8 RS = 0;
 		if (x->x_systhread_cancel)
 			break;
 		if (!(cb_empty(x, &x->my_cb))) {
@@ -289,16 +274,18 @@ void *sid_threadproc(t_sid *x)
 			}
 			Uint8 reg = lwe.WE_Reg_NR;
 			Uint8 val = lwe.WE_Value;
-			Uint8 RS = 0;
+			RS = 0;
 			while (RS != HSID_USB_WSTATE_OK) {
-				RS = HardSID_Try_Write(x->My_Device, 0, reg, val); 
-				if (RS == HSID_USB_WSTATE_BUSY) systhread_sleep(20);
+				RS = HardSID_Try_Write(x->My_Device, 8, reg, val); 
 			}
-			HardSID_SoftFlush(x->My_Device);
+			//HardSID_SoftFlush(x->My_Device);
 			systhread_mutex_unlock(x->x_mutex);
 		}
 		else {
-			systhread_sleep(4);
+			RS = 0;
+			while (RS != HSID_USB_WSTATE_OK) {
+				RS = HardSID_Try_Write(x->My_Device, 8, 0x1e, 0);
+			}
 		}
 	}
 	x->x_systhread_cancel = false;							// reset cancel flag for next time, in case
@@ -1412,3 +1399,10 @@ int cb_pop_front(t_sid *x, circular_buffer *cb, void *item)
 	cb->count--;
 	return (0);
 }
+
+char* my_stpcpy(char* dest, const char* src) {
+	while ((*dest++ = *src++)) {}
+	return --dest;
+}
+
+
